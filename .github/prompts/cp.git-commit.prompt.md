@@ -21,7 +21,7 @@ run `git diff --cached HEAD --stat` to get a list of changed files and the numbe
 
 If the diff is empty, stop and inform the user that there are no staged changes to commit.
 
-Iterate over all the files in the diff and for each file, run `git diff --cached HEAD -- <file>` to get the detailed changes. Summarize the changes for each file (e.g., "Modified 3 lines in src/app.js") and display these summaries in the chat window.
+Iterate over all the files in the diff and for each file, run `git diff --cached HEAD -- <file>` to get the detailed changes. Summarize the changes for each file (e.g., "Modified 3 lines in src/app.js") and display these summaries in the chat window. You can do this in a sub-agent and in parallel to speed up the process if there are many files.
 
 ### Step 3: Generate Commit Message
 

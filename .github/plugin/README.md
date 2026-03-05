@@ -9,13 +9,18 @@ Agent plugins are distributable packages that extend GitHub Copilot with preconf
 ## Plugin structure
 
 ```text
-plugin/
-├── plugin.json       # Plugin manifest (name, version, component paths)
+.github/
 ├── agents/           # Custom agent definitions (.agent.md)
-└── skills/           # Skill definitions (SKILL.md in named subdirectories)
+├── skills/           # Skill definitions (SKILL.md in named subdirectories)
+└── plugin/
+    ├── plugin.json   # Plugin manifest (name, version, component paths)
+    └── README.md
 ```
 
-The [plugin.json](plugin.json) manifest declares the plugin metadata and points to the `agents/` and `skills/` directories where the individual components live.
+The [plugin.json](plugin.json) manifest declares the plugin metadata and references components using paths relative to `.github/plugin/`, for example:
+
+- agent files in `../agents/*.agent.md`
+- skills directory at `../skills/`
 
 ## Installation
 

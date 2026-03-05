@@ -63,7 +63,7 @@ Follow these steps in order:
 3. Use the current branch as the `head` branch.
 4. Use the default branch as the `base` branch.
 5. Include the generated title and description.
-6. Do not invoke `gh pr create` until MCP activation and MCP creation have both been attempted and one of those MCP steps returned an error.
+6. Do not invoke `gh pr create` unless MCP activation was attempted and failed, or both MCP activation and MCP creation were attempted and creation failed.
 7. If falling back to `gh pr create`, include the MCP error message or failure reason in the response.
 8. For `gh pr create`, ensure the command is unambiguous for the active shell/platform. Multiline bodies and here-strings are allowed, but use shell-correct syntax for the environment (for example, Bash vs PowerShell) and verify the full command actually executes.
 9. Do not retry `gh pr create` blindly. If output is ambiguous, first inspect the previous command result and resolve whether a PR was already created before issuing another create command.

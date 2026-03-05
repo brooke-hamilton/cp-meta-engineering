@@ -1,0 +1,6 @@
+# Auto-detect text files and normalize line endings
+* text=auto
+
+# Force LF for files that must have it on all platforms
+*.sh text eol=lf
+Makefile text eol=lf

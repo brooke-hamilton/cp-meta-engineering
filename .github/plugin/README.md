@@ -1,5 +1,3 @@
-
-
 # Copilot Tools Plugin
 
 A GitHub Copilot agent plugin that bundles reusable custom agents and skills for common development workflows. The plugin packages context engineering tools — such as agent scaffolding, Git commit automation, and pull request creation — into a single installable unit that works in both VS Code and GitHub Copilot CLI.

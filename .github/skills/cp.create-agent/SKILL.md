@@ -1,10 +1,11 @@
 ---
-name: create-agent
+name: cp.create-agent
 description: >-
   Create a new GitHub Copilot custom agent (.agent.md) from a user description.
   Use when the user wants to define a specialized AI persona with tool restrictions,
   handoffs, and model preferences. Walks through documentation validation,
   conflict checking, naming, scope definition, and agent profile generation.
+user-invocable: true
 ---
 
 # Create a Custom Agent

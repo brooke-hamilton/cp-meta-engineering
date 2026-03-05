@@ -93,7 +93,7 @@ Ask the user which mode to run:
 Depending on the mode:
 
 - **Classify**: Ask the user to describe the desired behavior, frequency of use, and whether it requires special tools or personas.
-- **Audit**: Search the workspace for customization files:
+- **Audit**: Search the workspace for customization files. Start with the conventional locations below, then broaden to `**/*.agent.md`, `**/SKILL.md`, `**/*.instructions.md`, and `**/*.prompt.md` to catch files outside standard directories:
   - `.github/agents/*.agent.md`
   - `.github/skills/*/SKILL.md`
   - `.github/instructions/*.instructions.md`

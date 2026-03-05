@@ -1,8 +1,7 @@
 ---
-agent: agent
 description: Stage all changes, generate a commit message from diffs, and commit with signoff
 name: cp.git-commit
-tools: [execute/getTerminalOutput, execute/awaitTerminal, execute/runInTerminal, read/terminalSelection, read/terminalLastCommand]
+user-invocable: true
 ---
 
 # Git Commit with Generated Message

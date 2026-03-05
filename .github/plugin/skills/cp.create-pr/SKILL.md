@@ -1,7 +1,7 @@
 ---
 description: Automates the creation of a GitHub pull request from the current branch with validation and content generation
 name: cp.create-pr
-tools: [vscode, execute, read, agent, edit, search, web, todo]
+user-invocable: true
 ---
 
 # Create GitHub Pull Request
@@ -68,34 +68,6 @@ Follow these steps in order:
 1. Extract the PR URL from the creation response
 2. Display the URL to the user with a success message
 
-### Step 7: Create a report in markdown format
-
-Save a file named `pr_report.md` in the root of the repository. The report must contain all of the following sections:
-
-#### Actions Log
-
-A numbered list of every action taken during the PR creation process, in chronological order. Each entry must include:
-
-- **Command or action**: The exact `git` or `gh` CLI command executed, or a description of any non-command action (e.g., reading a file, analyzing output)
-- **Purpose**: Why the action was performed
-- **Outcome**: The result or key information derived from the action
-
-Include entries for actions where the model summarized, synthesized, or interpreted the output of a command. For example:
-
-- Determining the default branch by inspecting `git remote show` output
-- Analyzing `git diff` output to identify the nature of the changes
-- Synthesizing commit messages into a PR title and description
-- Deciding which PR template sections to fill in and how
-
-#### Generated PR Content
-
-- The PR title
-- The full PR description as submitted
-
-#### PR URL
-
-- The URL of the created pull request
-
 ## Error Handling
 
 - If any step fails, stop immediately and provide a clear error message
@@ -118,5 +90,5 @@ Provide concise progress updates for each step, and end with:
 ## Required Tools
 
 - Terminal commands for git operations
-- GitHub MCP tools for PR creation
+- GitHub MCP tools for PR creation (or GitHub CLI as a fallback)
 - File reading for repository information

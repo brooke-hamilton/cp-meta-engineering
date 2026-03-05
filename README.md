@@ -24,17 +24,21 @@ Notable: the [Agent Creator](.github/agents/cp.agent-creator.agent.md) is a meta
 
 Reusable slash-command prompts that orchestrate multi-step workflows. See the [prompts folder](.github/prompts/).
 
+### Custom skills
+
+Reusable skill definitions that give agents domain-specific capabilities for multi-step workflows. See the [skills folder](.github/skills/).
+
 ### Scripts
 
 Shell scripts that rely on Copilot for part of their functionality. See the [scripts folder](scripts/).
 
-### VS Code extension
+### Agent plugin
 
-The [Copilot Tools Sync](extensions/copilot-tools-sync/) extension syncs custom prompts, instructions, and agent files from this repo into my local VS Code user profile directories. This is a personal utility I built for my own workflow — it is not intended as a general-purpose tool.
+A distributable [agent plugin](.github/plugin/) that bundles the custom agents and skills from this repo into a single installable package for VS Code and GitHub Copilot CLI.
 
 ### Context engineering materials
 
-Notes on context engineering (`docs/context-engineering-guide.md`) covering context engineering patterns for AI systems. These notes are not authoratative or useful.
+Notes on context engineering and presentation slides in the [docs folder](docs/).
 
 ## GitHub documentation references
 

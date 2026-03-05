@@ -14,7 +14,7 @@ Evaluate, classify, and improve GitHub Copilot customization files. Determine wh
 
 ## Decision Framework
 
-Use this classification guide when evaluating what type of customization to use. This is based on the official GitHub documentation at <https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/agents/copilot-cli/comparing-cli-features>.
+Use this classification guide when evaluating what type of customization to use. This is based on the official GitHub and VS Code customization documentation at <https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/agents/about-agent-skills> and <https://code.visualstudio.com/docs/copilot/customization/overview>. This documentation provides the clearest guidance on the differences between instructions, skills, and agents: <https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/agents/copilot-cli/comparing-cli-features>.
 
 ### Custom Instructions
 
@@ -179,7 +179,7 @@ Before finalizing any recommendation or edit:
 
 ## Reference Links
 
-- [Comparing CLI features](https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/agents/copilot-cli/comparing-cli-features)
+- [Customization overview](https://code.visualstudio.com/docs/copilot/customization/overview)
 - [Custom agents](https://code.visualstudio.com/docs/copilot/customization/custom-agents)
 - [Custom instructions](https://code.visualstudio.com/docs/copilot/customization/custom-instructions)
 - [About agent skills](https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/agents/about-agent-skills)

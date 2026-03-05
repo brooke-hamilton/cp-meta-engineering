@@ -1,6 +1,6 @@
 ---
 description: >-
-  Create a descriptive git branch from uncommitted local changes using Copilot CLI.
+  Create a descriptive git branch from uncommitted local changes.
   Use when the user wants to generate a branch name from their current diff,
   or says "create branch", "new branch from changes", or "branch from diff".
 name: cp.create-branch
@@ -9,8 +9,8 @@ user-invocable: true
 
 # Create Branch from Local Changes
 
-Detect uncommitted, staged, or untracked changes in the workspace and use the
-Copilot CLI to generate a descriptive branch name, then create and switch to
+Detect uncommitted, staged, or untracked changes in the workspace, generate a
+descriptive branch name from the change context, then create and switch to
 that branch.
 
 ## Steps
@@ -30,7 +30,7 @@ Ensure the workspace is in a valid state for branch creation:
 
 ### Step 2: Gather Diff Context
 
-Collect the change information that will be sent to Copilot CLI:
+Collect the change information that will be used to generate a branch name:
 
 1. Run `git diff HEAD` to get the full diff of all tracked file changes
 2. Run `git ls-files --others --exclude-standard` to list untracked files

@@ -58,10 +58,15 @@ Follow these steps in order:
 
 **IMPORTANT:** The current branch may have a remote tracking branch that is a fork of the main repository. Ensure the PR is created against the main repository's default branch from the fork on the remote repository. DO NOT push the branch to the main repository if it is currently only on the fork. Instead, create the PR from the fork's branch to the main repository's default branch.
 
-1. Use the GitHub MCP tool to create the PR, or if the MCP tool is not available to create the PR, use the GitHub CLI (`gh pr create`).
-2. Use the current branch as the `head` branch
-3. Use the default branch as the `base` branch
-4. Include the generated title and description
+1. Activate pull request management MCP tools before any PR creation attempt.
+2. Attempt PR creation via MCP first.
+3. Use the current branch as the `head` branch.
+4. Use the default branch as the `base` branch.
+5. Include the generated title and description.
+6. Do not invoke `gh pr create` unless MCP activation was attempted and failed, or both MCP activation and MCP creation were attempted and creation failed.
+7. If falling back to `gh pr create`, include the MCP error message or failure reason in the response.
+8. For `gh pr create`, ensure the command is unambiguous for the active shell/platform. Multiline bodies and here-strings are allowed, but use shell-correct syntax for the environment (for example, Bash vs PowerShell) and verify the full command actually executes.
+9. Do not retry `gh pr create` blindly. If output is ambiguous, first inspect the previous command result and resolve whether a PR was already created before issuing another create command.
 
 ### Step 6: Return PR URL
 
@@ -76,6 +81,7 @@ Follow these steps in order:
   - Uncommitted changes
   - Unpushed commits
   - PR already exists for this branch
+  - MCP activation or MCP PR creation failure (report reason, then CLI fallback is allowed)
   - Insufficient GitHub permissions
 
 ## Output Format
@@ -86,6 +92,8 @@ Provide concise progress updates for each step, and end with:
 ✅ Pull request created successfully!
 🔗 URL: [PR_URL]
 ```
+
+Use the same final format when reusing an existing PR URL for the branch.
 
 ## Required Tools
 

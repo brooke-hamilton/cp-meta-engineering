@@ -1372,7 +1372,7 @@ Reusable, shareable context packages:
 
 ### 8.5 This Repository
 
-- **URL**: <https://github.com/brooke-hamilton/cp-context-engineering>
+- **URL**: <https://github.com/brooke-hamilton/cp-meta-engineering>
 - **Purpose**: Meta-example of context engineering principles applied to documentation development
 - **Explore**: `.specify/` directory structure, `constitution.md`, this guide's own `specs/1-context-engineering-guide/`
 - **Contributing**: Issues and pull requests welcome for improvements or additional patterns

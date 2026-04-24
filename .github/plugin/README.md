@@ -34,7 +34,7 @@ The [plugin.json](plugin.json) manifest declares the plugin metadata and referen
    ```json
    {
      "chat.pluginLocations": {
-       "/path/to/cp-context-engineering/.github/plugin": true
+       "/path/to/cp-meta-engineering/.github/plugin": true
      }
    }
    ```
@@ -58,7 +58,7 @@ If the plugin is published to a marketplace, you can browse and install it direc
 Install the plugin from a local path:
 
 ```shell
-copilot plugin install /path/to/cp-context-engineering/.github/plugin
+copilot plugin install /path/to/cp-meta-engineering/.github/plugin
 ```
 
 Verify the installation:
@@ -70,7 +70,7 @@ copilot plugin list
 To uninstall:
 
 ```shell
-copilot plugin uninstall cp-context-engineering
+copilot plugin uninstall cp-meta-engineering
 ```
 
 > **Note:** When you install a plugin its components are cached. To pick up changes made to a local plugin, run the install command again.

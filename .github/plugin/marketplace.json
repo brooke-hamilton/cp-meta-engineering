@@ -5,8 +5,8 @@
     "email": "45323234+brooke-hamilton@users.noreply.github.com"
   },
   "metadata": {
-    "description": "Copilot context engineering tools",
-    "version": "1.0.0"
+    "description": "Copilot meta-engineering tools",
+    "version": "0.1.0"
   },
   "plugins": [
     {

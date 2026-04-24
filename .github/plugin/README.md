@@ -29,11 +29,11 @@ The [plugin.json](plugin.json) manifest declares the plugin metadata and referen
 #### From a local path
 
 1. Clone or download this repository.
-2. Open VS Code settings (`Ctrl+,` / `Cmd+,`) and add the plugin path to the `chat.plugins.paths` setting:
+2. Open VS Code settings (`Ctrl+,` / `Cmd+,`) and add the plugin path to the `chat.pluginLocations` setting:
 
    ```json
    {
-     "chat.plugins.paths": {
+     "chat.pluginLocations": {
        "/path/to/cp-context-engineering/.github/plugin": true
      }
    }

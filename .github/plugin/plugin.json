@@ -8,9 +8,6 @@
   },
   "license": "MIT",
   "keywords": [],
-  "agents": [
-    "../agents/cp.agent-creator.agent.md",
-    "../agents/cp.graph-app-architect.agent.md"
-  ],
+  "agents": "../agents/",
   "skills": "../skills/"
 }

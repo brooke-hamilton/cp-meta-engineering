@@ -15,9 +15,9 @@ Each script has a corresponding skill that does the same thing:
 
 | Script | Skill | Script lines | Skill lines |
 | --- | --- | ---: | ---: |
-| `commit.sh` | `cp.git-commit` | 310 | 38 |
-| `branch.sh` | `cp.create-branch` | 204 | 79 |
-| `create-pr.sh` | `cp.create-pr` | 489 | 94 |
+| `commit.sh` | `git-commit` | 310 | 38 |
+| `branch.sh` | `create-branch` | 204 | 79 |
+| `create-pr.sh` | `create-pr` | 489 | 94 |
 | **Total** | | **1003** | **211** |
 
 The scripts are roughly **5x longer** than the equivalent skills.

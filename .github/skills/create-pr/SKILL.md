@@ -1,6 +1,6 @@
 ---
 description: Automates the creation of a GitHub pull request from the current branch with validation and content generation
-name: cp.create-pr
+name: create-pr
 user-invocable: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 description: Stage all changes, generate a commit message from diffs, and commit with signoff
-name: cp.git-commit
+name: git-commit
 user-invocable: true
 ---
 

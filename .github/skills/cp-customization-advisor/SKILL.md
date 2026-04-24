@@ -1,5 +1,5 @@
 ---
-name: customization-advisor
+name: cp-customization-advisor
 description: >-
   Evaluate and recommend whether Copilot customizations should be skills, agents,
   or instructions. Audit existing customization files, suggest migrations

@@ -1,0 +1,13 @@
+{
+  "name": "cp-context-engineering",
+  "description": "Copilot Tools",
+  "version": "0.1.0",
+  "author": {
+    "name": "Brooke Hamilton",
+    "email": "45323234+brooke-hamilton@users.noreply.github.com"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "agents": ".github/agents/",
+  "skills": ".github/skills/"
+}

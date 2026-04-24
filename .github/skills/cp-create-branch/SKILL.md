@@ -3,7 +3,7 @@ description: >-
   Create a descriptive git branch from uncommitted local changes.
   Use when the user wants to generate a branch name from their current diff,
   or says "create branch", "new branch from changes", or "branch from diff".
-name: cp.create-branch
+name: cp-create-branch
 user-invocable: true
 ---
 
